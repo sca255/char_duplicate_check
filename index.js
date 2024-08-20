@@ -38,9 +38,11 @@ var ctx=getContext()
 function onButtonClick() {
   let chars=ctx.characters;
   for (let i in chars){
+    let i2=ctx.characters[i]
     console.log(i)
-    if (i.name.endsWith("1")||i.name.endsWith("2")||i.name.endsWith("3")||i.name.endsWith("4")||i.name.endsWith("5")||i.name.endsWith("6")||i.name.endsWith("7")||i.name.endsWith("8")||i.name.endsWith("9")){
-      deleteCharacter(i.avatar)
+
+    if (i2.name.endsWith("1")||i.name.endsWith("2")||i.name.endsWith("3")||i.name.endsWith("4")||i.name.endsWith("5")||i.name.endsWith("6")||i.name.endsWith("7")||i.name.endsWith("8")||i.name.endsWith("9")){
+      deleteCharacter(i2.avatar)
     }
   }
 
