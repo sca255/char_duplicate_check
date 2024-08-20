@@ -41,7 +41,7 @@ function onButtonClick() {
     let i2=ctx.characters[i]
     console.log(i2)
 
-    if (i2.name.endsWith("1")||i.name.endsWith("2")||i.name.endsWith("3")||i.name.endsWith("4")||i.name.endsWith("5")||i.name.endsWith("6")||i.name.endsWith("7")||i.name.endsWith("8")||i.name.endsWith("9")){
+    if (i2.name.endsWith("1")||i2.name.endsWith("2")||i2.name.endsWith("3")||i2.name.endsWith("4")||i2.name.endsWith("5")||i2.name.endsWith("6")||i2.name.endsWith("7")||i2.name.endsWith("8")||i2.name.endsWith("9")){
       deleteCharacter(i2.avatar)
     }
   }
