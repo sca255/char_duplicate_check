@@ -33,7 +33,7 @@ function onExampleInput(event) {
   extension_settings[extensionName].example_setting = value;
   saveSettingsDebounced();
 }
-ctx=getContext()
+var ctx=getContext()
 // This function is called when the button is clicked
 function onButtonClick() {
   chars=ctx.characters;
