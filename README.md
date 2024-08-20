@@ -1,10 +1,10 @@
-# SillyTavern Extension Example
+# character duplicate checker
 
-*Provide a brief description of how your extension works, what problem it aims to solve.*
+
 
 ## Features
 
-*Describe some of the main selling points of your extension.*
+check suplicate chracters and removes them
 
 ## Installation and Usage
 
