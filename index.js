@@ -5,10 +5,10 @@
 import { extension_settings, getContext, loadExtensionSettings } from "../../../extensions.js";
 
 //You'll likely need to import some other functions from the main script
-import { saveSettingsDebounced } from "../../../../script.js";
+import { saveSettingsDebounced,deleteCharacter} from "../../../../script.js";
 
 // Keep track of where your extension is located, name should match repo name
-const extensionName = "st-extension-example";
+const extensionName = "char du0plicate cjeck";
 const extensionFolderPath = `scripts/extensions/third-party/${extensionName}`;
 const extensionSettings = extension_settings[extensionName];
 const defaultSettings = {};
@@ -33,15 +33,18 @@ function onExampleInput(event) {
   extension_settings[extensionName].example_setting = value;
   saveSettingsDebounced();
 }
-
+ctx=getContext()
 // This function is called when the button is clicked
 function onButtonClick() {
-  // You can do whatever you want here
-  // Let's make a popup appear with the checked setting
-  toastr.info(
-    `The checkbox is ${extension_settings[extensionName].example_setting ? "checked" : "not checked"}`,
-    "A popup appeared because you clicked the button!"
-  );
+  chars=ctx.characters;
+  for (let i in chars){
+    let s=""
+    s.ends
+    if (i.name.endsWith("1")||i.name.endsWith("2")||i.name.endsWith("3")||i.name.endsWith("4")||i.name.endsWith("5")||i.name.endsWith("6")||i.name.endsWith("7")||i.name.endsWith("8")||i.name.endsWith("9")){
+      deleteCharacter(i.avatar)
+    }
+  }
+
 }
 
 // This function is called when the extension is loaded
@@ -55,7 +58,7 @@ jQuery(async () => {
   $("#extensions_settings").append(settingsHtml);
 
   // These are examples of listening for events
-  $("#my_button").on("click", onButtonClick);
+  $("#task").on("click", onButtonClick);
   $("#example_setting").on("input", onExampleInput);
 
   // Load settings when starting things up (if you have any)
