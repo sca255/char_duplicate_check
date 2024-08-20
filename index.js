@@ -8,7 +8,7 @@ import { extension_settings, getContext, loadExtensionSettings } from "../../../
 import { saveSettingsDebounced,deleteCharacter} from "../../../../script.js";
 
 // Keep track of where your extension is located, name should match repo name
-const extensionName = "char du0plicate cjeck";
+const extensionName = "char duplicate cjeck";
 const extensionFolderPath = `scripts/extensions/third-party/${extensionName}`;
 const extensionSettings = extension_settings[extensionName];
 const defaultSettings = {};
